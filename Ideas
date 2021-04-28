@@ -8,3 +8,5 @@
 5. how to categroize families (adults,babies)?
 
 6. What is adr? average price
+
+7. The correlation between anon_feat_13 and the labels seem to be 1.0 - Let's dig into that
