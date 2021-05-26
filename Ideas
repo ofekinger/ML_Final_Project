@@ -2,8 +2,6 @@
 
 2. Check correlation according to seasons.
 
-3. Check correlation to weeks and month days and try to spearte working days to weekends( note each country is diffrent)
-
 4. should we make desposit_type a dummy for non_refund?
 5. how to categroize families (adults,babies)?
 

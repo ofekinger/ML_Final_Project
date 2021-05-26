@@ -1,0 +1,44 @@
+trainingInput:
+  hyperparameters:
+    goal: MAXIMIZE
+    maxTrials: 70
+    maxParallelTrials: 1
+    hyperparameterMetricTag: accuracy
+    enableTrialEarlyStopping: TRUE
+    params:
+    - parameterName: n_components
+      type: INTEGER
+      minValue: 1000
+      maxValue: 1600
+    - parameterName: max_features
+      type: CATEGORICAL
+      categoricalValues: [
+          "auto",
+          "sqrt",
+          "log2"
+          ]
+    - parameterName: criterion
+      type: CATEGORICAL
+      categoricalValues: [
+          "gini",
+          "entropy"
+          ]
+    - parameterName: max_depth
+      type: INTEGER
+      minValue:  10
+      maxValue:  110
+      scaleType: UNIT_LINEAR_SCALE
+    - parameterName: min_samples_split
+      type: INTEGER
+      minValue: 2
+      maxValue: 10
+    - parameterName: min_samples_leaf
+      type: INTEGER
+      minValue: 1
+      maxValue: 5
+    - parameterName: bootstrap
+      type: CATEGORICAL
+      categoricalValues: [
+          "True",
+          "False"
+      ]
